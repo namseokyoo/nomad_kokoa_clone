@@ -33,15 +33,6 @@
 }
 
 .info__notification {
-    background-color: tomato;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: 600;
     position: absolute;
     left: 35px;
     bottom: 30px;
