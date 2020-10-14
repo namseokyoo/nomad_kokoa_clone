@@ -14,3 +14,16 @@
 .screen-header__icons span {
     margin-left: 25px;
 }
+
+.screen-header__alert {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.screen-header__alert {
+    display: inline-block;
+    position: relative;
+    top: -15px;
+}
