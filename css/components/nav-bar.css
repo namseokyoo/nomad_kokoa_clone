@@ -17,6 +17,18 @@
     color: #2e363e;
 }
 
+@keyframes notificationAnimation {
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: translateY(-5px) rotateY(360deg);
+    }
+    100% {
+        transform: none;
+    }
+}
+
 .chat__notification {
     background-color: tomato;
     width: 30px;
@@ -30,19 +42,37 @@
     position: absolute;
     left: 15px;
     bottom: 15px;
+    animation: notificationAnimation 2s ease-in-out infinite;
 }
 
 .info__notification {
-    background-color: tomato;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: 600;
     position: absolute;
     left: 35px;
     bottom: 30px;
+}
+
+@keyframes appearBtnAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+.nav_btn {
+    transform: translateY(80px);
+    opacity: 0;
+    animation: appearBtnAnimation 1s ease-in-out forwards;
+}
+
+.nav_btn:nth-child(2) {
+    animation-delay: 0.3s;
+}
+.nav_btn:nth-child(3) {
+    animation-delay: 0.6s;
+}
+.nav_btn:last-child {
+    animation-delay: 0.9s;
 }

@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Friends - Kokoa</title>
+    <title>More - Kokoa</title>
 </head>
 
 <body>
@@ -25,7 +25,7 @@
     </div>
 
     <header class="screen-header">
-        <h1 class="screen-header__title">Friends</h1>
+        <h1 class="screen-header__title">More</h1>
         <div class="screen-header__icons">
             <span>
                 <i class="fas fa-search fa-lg"></i></a></li>
@@ -34,59 +34,80 @@
                 <i class="fas fa-music fa-lg"></i>
             </span>
             <span>
-                <i class="fas fa-cog fa-lg"></i>
+                <a href="setting.html"><i class="fas fa-cog fa-lg"></i></a>
+                <div class="screen-header__alert"></div>
             </span>
-
         </div>
     </header>
 
-    <a id="friends-display-link">
-        <i class="fas fa-info-circle"></i>
-        Friend's Names Display
-        <i class="fas fa-chevron-right fa-xs"></i>
-    </a>
-
-    <main class="friends-screen">
-
+    <main class="main-screen more-screen">
         <div class="user-component">
             <div class="user-component__column">
                 <img src="https://avatars3.githubusercontent.com/u/2939062?s=460&u=10fae224f280b7536d97eb654ad5bb7fc6cf8ff4&v=4"
                     class="user-component__avatar user-component__avatar--xl" />
                 <div class="user-component__text">
                     <h4 class="user-component__title">Namseok</h4>
-                    <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
+                    <h6 class="user-component__subtitle">+82-10-6545-6541 <i class="fas fa-exclamation-circle"></i></h6>
+
                 </div>
             </div>
-            <div class="user-component_column"></div>
+            <div class="user-component_column">
+                <i class="far fa-file-alt fa-3x"></i>
+            </div>
         </div>
 
-        <div class="friends-screen__channel">
-            <div class="friends-screen__channel-header">
-                <span>Channel</span>
-                <i class="fas fa-chevron-up fa-xs"></i>
-            </div>
-            <div class="user-component">
-                <div class="user-component__column">
-                    <img src="https://avatars3.githubusercontent.com/u/2939062?s=460&u=10fae224f280b7536d97eb654ad5bb7fc6cf8ff4&v=4"
-                        class="user-component__avatar user-component__avatar--sm" />
-                    <div class="user-component__text">
-                        <h4 class="user-component__title user-component__title--not-bold">Channel</h4>
+        <div class="icon-row">
+            <div class="icon-row__icon">
+                <i class="far fa-calendar-alt"></i>
+                <span>Calendar</span></div>
+            <div class="icon-row__icon">
+                <i class="far fa-smile-wink"></i>
+                <span>Emoticons</span></div>
+            <div class="icon-row__icon">
+                <i class="fas fa-paint-roller"></i>
+                <span>Themes</span></div>
+            <div class="icon-row__icon">
+                <i class="far fa-user-circle"></i>
+                <span>Account</span></div>
+        </div>
+
+
+        <div class="more-suggestions">
+            <h4 class="more-suggestions__title">Suggestions</h4>
+
+            <div class="more-suggestions__icons">
+
+                <div class="more-suggestions__icon">
+                    <div class="more-suggestions__icon-image">
+                        <i class="fas fa-quote-right"></i>
                     </div>
+                    <span class="more-suggestions__icon-text">Kakao Story</span>
                 </div>
-                <div class="user-component_column">
-                    <div>
-                        <sapn>2</sapn>
-                        <i class="fas fa-chevron-right fa-xs"></i>
+
+
+                <div class="more-suggestions__icon">
+                    <div class="more-suggestions__icon-image">
+                        <i class="fas fa-users"></i>
                     </div>
+                    <span class="more-suggestions__icon-text">Kakao Friends</span>
                 </div>
+
+                <div class="more-suggestions__icon">
+                    <div class="more-suggestions__icon-image">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <span class="more-suggestions__icon-text">Friends Gem</span>
+                </div>
+
             </div>
         </div>
+
     </main>
     <nav class="nav">
         <ul class="nav__list">
             <li class="nav_btn">
                 <a class="nav__link" href="friends.html">
-                    <i class="fas fa-user fa-2x"></i></a></li>
+                    <i class="far fa-user fa-2x"></i></a></li>
             <li class="nav_btn">
                 <a class="nav__link" href="chats.html">
                     <span class="chat__notification badge">1</span>
@@ -96,15 +117,10 @@
                     <i class="fas fa-search fa-2x"></i></a></li>
             <li class="nav_btn">
                 <a class="nav__link" href="more.html">
-                    <span class="info__notification">
-                        <i class="fas fa-ellipsis-h fa-2x"></i></span></a></li>
+                    <span class="info__notification"> </span>
+                    <i class="fas fa-ellipsis-h fa-2x"></i></a></li>
         </ul>
     </nav>
-
-    <div id="splash-screen">
-        <i class="fas fa-comment"></i>
-    </div>
-
 
     <script src="https://kit.fontawesome.com/44da77f87a.js" crossorigin="anonymous"></script>
     <script src="js/nav-bar.js"></script>
